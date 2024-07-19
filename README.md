@@ -18,4 +18,8 @@ The STM32 will be coded in such a way that, If the input from the IR sensor is h
 The functioning of the display(WALK or STOP) is verified as whenever the STM receives a high input from the main controller, it changes from “STOP” to “WALK”.
 
 
-Note: VCC could be taken by using the Power Section Circuit of the Pedestrian Push Button.
+the main.c (STM32CUBEIDE) file does the following:-
+PC13 and PC15: GPIO_Output
+PA8: TIM1_CH1
+PA15: TIM2_CH2
+PA1: ADC1_IN1
